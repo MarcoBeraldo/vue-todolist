@@ -25,42 +25,41 @@
 // (se done era uguale a false, impostare true e viceversa)
 
 const root = new Vue({
-  name: toDoList,
+  name: "toDoList",
   el: "#main-section",
   data: {
     tasks: [
       {
-        whatToDo:
-          "Creare l'array di oggetti",
-        isDone: true,
+        whatToDo: "Creare l'array di oggetti",
+        done: true,
       },
       {
-        whatToDo:
-          "Dichiarare le proprietà degli oggetti nell'array",
-        isDone: true,
+        whatToDo: "Dichiarare le proprietà degli oggetti nell'array",
+        done: true,
       },
       {
-        whatToDo:
-          "Creo l'ul nel virtual DOM",
-        isDone: false,
+        whatToDo: "Creo l'ul nel virtual DOM",
+        done: false,
       },
       {
-        whatToDo:
-          "Verificare che i booleani funzionino",
-        isDone: false,
+        whatToDo: "Verificare che i booleani funzionino",
+        done: false,
       },
       {
-        whatToDo:
-          "Creare il bottone per eliminare l' li dalla ul",
-        isDone: false,
+        whatToDo: "Creare il bottone per eliminare l' li dalla ul",
+        done: false,
       },
       {
-        whatToDo:
-          "Creare l'input di testo e il pulsante 'aggiungi'",
-        isDone: false,
+        whatToDo: "Creare l'input di testo e il pulsante 'aggiungi'",
+        done: false,
       },
     ],
   },
   computed: {},
-  methods: {},
+
+  methods: {
+    deleteTask(index) {
+      this.tasks.splice(index, 1);
+    },
+  },
 });

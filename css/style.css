@@ -22,3 +22,7 @@ header >div{
     bottom: 30px;
     left: 53%;
 }
+
+#main-section ul{
+    width: 700px;
+}
