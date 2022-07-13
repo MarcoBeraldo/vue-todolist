@@ -1,0 +1,24 @@
+header{
+    height: 200px;
+    
+    background-image: url(../img/title.png);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative
+}
+
+img{      
+
+}
+
+#logo{
+    height: 1.5rem;
+
+}
+
+header >div{
+    position:absolute;
+    bottom: 30px;
+    left: 53%;
+}
