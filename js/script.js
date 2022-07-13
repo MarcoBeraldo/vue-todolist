@@ -61,5 +61,8 @@ const root = new Vue({
     deleteTask(index) {
       this.tasks.splice(index, 1);
     },
+    setDone(index) {
+      this.tasks[index].done = !this.tasks[index].done;
+    },
   },
 });
